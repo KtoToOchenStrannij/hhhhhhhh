@@ -17,6 +17,7 @@ protected:
         {
             emit rclicked();
         }
+      QPushButton::mouseReleaseEvent(event);
     }
 };
 
