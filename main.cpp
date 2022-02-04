@@ -1,11 +1,12 @@
 #include <QCoreApplication>
 #include <QtWidgets>
 #include "sbutton.h"
+#include "window.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    SButton sb;
+    window sb;
     sb.show();
     return a.exec();
 }
