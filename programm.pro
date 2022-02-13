@@ -17,7 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         custombutton.cpp \
         main.cpp \
-        sbutton.cpp
+        sbutton.cpp \
+        window.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -26,4 +27,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     custombutton.h \
-    sbutton.h
+    sbutton.h \
+    window.h
