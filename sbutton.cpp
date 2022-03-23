@@ -3,8 +3,8 @@
 SButton::SButton(QWidget* pwgt) : QLabel(pwgt)
 {
     customButton* pb = new customButton(this);
-    int ar = 9;
-    switch (ar)
+    m_ar = 9;
+    switch (m_ar)
     {
     case 0:
         this->setText(" ");
@@ -45,7 +45,7 @@ SButton::SButton(QWidget* pwgt) : QLabel(pwgt)
     glo->setContentsMargins(0,0,0,0);
 
     QSizePolicy PolicyButton_1 = pb->sizePolicy();
-        PolicyButton_1.setVerticalPolicy(QSizePolicy::Expanding);
-        pb->setSizePolicy(PolicyButton_1);
+    PolicyButton_1.setVerticalPolicy(QSizePolicy::Expanding);
+    pb->setSizePolicy(PolicyButton_1);
 }
 
