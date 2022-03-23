@@ -3,7 +3,6 @@
 SButton::SButton(QWidget* pwgt) : QLabel(pwgt)
 {
     customButton* pb = new customButton(this);
-    m_ar = 9;
     switch (m_ar)
     {
     case 0:
