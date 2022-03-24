@@ -5,8 +5,6 @@ window::window(QWidget *parent): QWidget(parent)
 {
     QGridLayout *grid = new QGridLayout(this);
     grid->setSpacing(2);
-
-    QVBoxLayout *l = new QVBoxLayout();
     bool VT[9][9];
     srand(time(NULL));
     for(int i=0;i<9;i++)
@@ -66,8 +64,6 @@ window::window(QWidget *parent): QWidget(parent)
         for (int j=0; j<9; j++) {
             SButton* btn = new SButton();
             btn->m_ar = VT_2[i][j];
-            l->addWidget(btn);
-            buttons->append(btn);
             btn->setFixedSize(40, 40);
             grid->addWidget(btn, i, j);
         }

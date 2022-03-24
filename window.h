@@ -7,7 +7,6 @@ class window : public QWidget
 {
 public:
     window(QWidget *parent = 0);
-    QList<SButton *> *buttons = new QList<SButton *>();
 };
 
 #endif // WINDOW_H
