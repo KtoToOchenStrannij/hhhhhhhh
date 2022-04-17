@@ -62,8 +62,7 @@ window::window(QWidget *parent): QWidget(parent)
 
     for (int i=0; i<9; i++) {
         for (int j=0; j<9; j++) {
-            SButton* btn = new SButton();
-            btn->m_ar = VT_2[i][j];
+            SButton* btn = new SButton(VT_2[i][j]);
             btn->setFixedSize(40, 40);
             grid->addWidget(btn, i, j);
         }
