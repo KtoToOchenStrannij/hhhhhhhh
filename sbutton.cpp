@@ -3,7 +3,7 @@
 SButton::SButton(int ar, QWidget* pwgt) : QLabel(pwgt)
 {
     customButton* pb = new customButton(this);
-    switch (m_ar)
+    switch (ar)
     {
     case 0:
         this->setText(" ");
