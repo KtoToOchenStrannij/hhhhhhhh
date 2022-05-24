@@ -10,7 +10,7 @@
 class SButton : public QLabel
 {
 public:
-     SButton(int ar, QWidget* pwgt=0){}
+     SButton(int ar, QWidget* pwgt=0);
 };
 
 #endif // SBUTTON_H
