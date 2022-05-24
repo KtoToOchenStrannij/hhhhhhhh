@@ -1,6 +1,6 @@
 #include "sbutton.h"
 
-SButton::SButton(QWidget* pwgt, int ar) : QLabel(pwgt)
+SButton::SButton(int ar, QWidget* pwgt) : QLabel(pwgt)
 {
     customButton* pb = new customButton(this);
     switch (m_ar)
